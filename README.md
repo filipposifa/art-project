@@ -1,2 +1,2 @@
-# tarti.github.io
-(Deree College) Art Project
+# Art Project
+Deree College Class Project
