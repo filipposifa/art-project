@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="randomColor()">
+
+<div class="neck"></div>
+<div class="head">
+    <div class="top"></div>
+    <div class="top-open"></div>
+    <div class="nose"></div>
+</div>
+<div class="center-point">
+    <div class="rectangle">
+        <p>How am I feeling?</p>
+    </div>
+    <div class="ellipse">
+        <p>My emotional intelligence.</p>
+    </div>
+    <div class="triangle">
+        <p>I am so tired.</p>
+    </div>
+    <div class="diamond">
+        <p style="margin-left: 25%; margin-right: 25%;">I am taking sleeping pills.</p>
+    </div>
+</div>
+
+<script>
+    function randomColor() {
+        var colors = [
+            '#3b2219', '#a16e4b', '#d4aa78', '#e6bc98', '#ffe7d1'
+        ]
+        var random_color = colors[Math.floor(Math.random() * colors.length)]
+        var doc = document.getElementsByClassName('neck')
+        doc[0].style.backgroundColor = random_color
+        doc = document.getElementsByClassName('head')
+        doc[0].style.backgroundColor = random_color
+        doc = document.getElementsByClassName('top')
+        doc[0].style.backgroundColor = random_color
+        doc = document.getElementsByClassName('nose')
+        doc[0].style.backgroundColor = random_color
+    }
+</script>
+
+</body>
+</html>
